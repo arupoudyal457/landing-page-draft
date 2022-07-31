@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Oswald:wght@400;600;700&display=swap');
+
+:root {
+    --theme-pink: #ee286e;
+    --theme-light-pink: #f35e93;
+    --theme-white: #fff;
+    --theme-grey: #666;
+    --theme-light-grey: #ccc;
+    --theme-black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar CSS */
+
+header {
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: var(--theme-grey);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+.logo {
+    margin: 0.5rem 2.5rem 0.5rem 2.5rem;
+    /* width: 100%; */
+    /* margin: 0.5rem; */
+    z-index: 5;
+}
+
+ion-icon {
+    font-size: 2.4rem;
+}
+
+.navbar_items {
+    position: relative;
+    /* transition: height 200ms ease; */
+}
+
+.navbar_items ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar_items li {
+    list-style: none;
+}
+
+.navbar_items li a {
+    text-decoration: none;
+    color: var(--theme-grey);
+    padding: 1rem;
+    display: block;
+    font-size: 1.25rem;
+    transition: color 300ms ease-in-out;
+}
+
+.navbar_items li a:hover {
+    color: var(--theme-black);
+}
+
+.other_items {
+    position: relative;
+}
+
+.other_items ul {
+    margin: 0 0.5em 0 0;
+    padding: 0;
+    display: flex;
+}
+
+.other_items li {
+    list-style: none;
+}
+
+.other_items li a ion-icon{
+    text-decoration: none;
+    color: var(--theme-grey);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: block;
+    font-size: 1.5em;
+}
+
+.toggler {
+    display: none;
+    z-index: 0;
+}
+
+.toggle-button {
+    position: relative;
+    top: 25%;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--theme-grey);
+    border-radius: 10px;
+}
+
+@media (max-width: 940px) {
+    .toggler {
+        display: flex;
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar_items {
+        position: absolute;
+        top: -50vh;
+        display: flex;
+        width: 100%;
+        transition: top 500ms ease-in;
+        z-index: 0;
+        background-color: var(--theme-white);
+    }
+
+    .navbar {
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--theme-white);
+    }
+
+    .navbar_items ul {
+        width: 100%;
+        flex-direction: column;
+        margin: 0.25em;
+        /* text-align: center; */
+    }
+
+    .active {
+        top: 4.5rem;
+        display: flex;
+    }
+}
+
+/* End of Navbar CSS */
+
+/* Jumbotron CSS */
+
+.img-container {
+    background-image: linear-gradient(rgba(256, 256, 256, 0.7), rgba(256, 256, 256, 0.7)), url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1989&q=80");
+    background-position: 10% 10%;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+}
+
+.jumbotron-header {
+    font-size: 5rem;
+    color: var(--theme-pink);
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    width: 50%;
+    text-align: left;
+    margin: 5% 0% 3% 7%;
+    
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--theme-black);
+    font-family: "Lato", sans-serif;
+    width: 50%;
+    text-align: left;
+    margin: 0 0 2% 7%;
+}
+
+.btn {
+    margin: 2% 0 2% 7%;
+    font-size: 0.9rem;
+    padding-right: 1.75%;
+    padding-left: 1.75%;
+    padding-top: 1.25%;
+    padding-bottom: 1.25%;
+    cursor: pointer;
+    background-color: var(--theme-pink);
+    text-transform: uppercase;
+    color: var(--theme-white);
+    box-shadow: none;
+    border: none;
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover {
+    color: var(--theme-white);
+    background-color: var(--theme-light-pink);
+}
+
+/* End of Jumbotron CSS */
