@@ -198,9 +198,10 @@ ion-icon {
 
 .button {
     width: 220px;
+    height: 48px;
     display: flex;
     align-items: center;
-    margin: 3% 0 12% 7%;
+    padding: 3% 0 12% 7%;
     cursor: pointer;
 }
 
@@ -234,6 +235,62 @@ ion-icon {
 
 } */
 
+.card-array {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    margin: -5% 10% 5% 10%;
+    /* position: absolute;
+    top: 70vh; */
+}
 
+.card {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10% 2%;
+    /* border: 1px solid var(--theme-grey); */
+    background: var(--theme-white);
+    border-radius: 3px;
+    transition: box-shadow 300ms ease-in-out;
+}
 
+.card:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, .10);
+}
+
+.card .img__part img {
+    width: 30%;
+    margin: 5% 35%;
+}
+
+.card .text__part {
+    text-align: center;
+    color: var(--theme-pink);
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 5% 0;
+}
+
+@media (max-width: 760px) {
+    .card-array {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: -5% 10%;
+        /* position: absolute;
+        top: 70vh; */
+    }
+}
 /* End of Jumbotron CSS */
+
+/* About section CSS */
+
+.about-section {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5% 10%;
+}
+
+/* End of About Section CSS */
