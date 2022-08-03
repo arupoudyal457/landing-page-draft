@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Oswald:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --theme-pink: #ee286e;
@@ -8,18 +8,26 @@
     --theme-grey: #666;
     --theme-light-grey: #ccc;
     --theme-black: #000;
+    --yellow-star: #fbba17;
+    /* --jumbo-color: #d3d8db; */
 }
 
 * {
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 
 /* Navbar CSS */
-
-header {
-    z-index: 10;
-}
+/* main {
+    background-color: #e5e5f7;
+    opacity: 0.2;
+    background-image:  linear-gradient(135deg, #f35e93 25%, transparent 25%), linear-gradient(225deg, #f35e93 25%, transparent 25%), linear-gradient(45deg, #f35e93 25%, transparent 25%), linear-gradient(315deg, #f35e93 25%, #e5e5f7 25%);
+    background-position:  40px 0, 40px 0, 0 0, 0 0;
+    background-size: 80px 80px;
+    background-repeat: repeat;
+} */
 
 .navbar {
     display: flex;
@@ -30,15 +38,19 @@ header {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     margin-right: 5%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 
 .logo {
-    margin: 0.5rem 2.5rem 0.5rem 2.5rem;
+    margin: 1.5rem 2.5rem 0.5rem 2.5rem;
     /* width: 100%; */
     /* margin: 0.5rem; */
     z-index: 5;
+}
+
+.logo img {
+    width: 250px;
 }
 
 ion-icon {
@@ -64,7 +76,7 @@ ion-icon {
 .navbar_items li a {
     text-decoration: none;
     color: var(--theme-grey);
-    padding: 1rem;
+    padding: 0 1rem;
     display: block;
     font-size: 1.25rem;
     transition: color 300ms ease-in-out;
@@ -164,36 +176,54 @@ ion-icon {
 
 /* Jumbotron CSS */
 
-.img-container {
-    background-image: linear-gradient(rgba(256, 256, 256, 0.7), rgba(256, 256, 256, 0.7)), url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1989&q=80");
-    background-position: 10% 10%;
-}
+/* .img-container {
+    background-color: var(--jumbo-color);
+} */
 
 .jumbotron {
     margin: 0;
     padding: 0;
     width: 100%;
     height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5%;
+    /* background-image: linear-gradient(to right, #ffffff, 60%, #f0f2f3); */
+}
+
+.jumbotron div img {
+    width: 90%;
+    margin: -50% 0 0 10%;
+    background-image: linear-gradient(to right, #ffffff, 10%, #F8f9f9)
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    z-index: -1; */
+
 }
 
 .jumbotron-header {
     font-size: 5rem;
-    color: var(--theme-pink);
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    width: 50%;
+    color: var(--theme-light-pink);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 100%;
     text-align: left;
     margin: 5% 0% 3% 7%;
-    
+    /* text-transform: uppercase; */
 }
 
 .description {
     font-size: 1.1rem;
     color: var(--theme-black);
-    font-family: "Lato", sans-serif;
-    width: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 100%;
     text-align: left;
     margin: 0 0 2% 7%;
+    line-height: 1.75rem;
 }
 
 .button {
@@ -205,14 +235,14 @@ ion-icon {
 }
 
 .btn__padding {
-    padding: 3% 0 12% 7%;
+    padding: 3% 0 20% 7%;
 }
 
 .textpart {
     font-size: 0.9rem;
     text-transform: uppercase;
     padding: 7% 10%;
-    font-family: "Open Sans Pro", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--theme-pink);
     color: var(--theme-white);
 }
@@ -271,7 +301,7 @@ ion-icon {
 .card .text__part {
     text-align: center;
     color: var(--theme-pink);
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     margin: 5% 0;
@@ -297,9 +327,15 @@ ion-icon {
     grid-template-columns: repeat(2, 1fr);
     margin: 10% 5%;
 }
+.img-part {
+    color: var(--theme-black);
 
+}
 .img-part img {
-    width: 90%;
+    width: 95%;
+    height: 95%;
+    margin: 0 0 0 5%;
+    /* margin: 10% 5%; */
 }
 
 .txt-part {
@@ -326,7 +362,7 @@ hr.border-part {
     font-size: 4rem;
     color: var(--theme-black);
     font-weight: 600;
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 3% 0%;
 }
 
@@ -334,7 +370,7 @@ hr.border-part {
     font-size: 1.15rem;
     color: var(--theme-grey);
     font-weight: 500;
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 50px 0%;
     line-height: 2rem;
 }
@@ -354,5 +390,317 @@ hr.border-part {
 .explore-section {
     width: 80%;
     padding: 0 5%;
+    display: flex;
+    align-items: flex-end;
 }
+
+.random-pattern {
+    width: 350px;
+    height: 350px;
+    right: -11.5rem;
+    /* top: -10rem; */
+    transform: rotate(315deg);
+
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    box-shadow: none;
+    transition: box-shadow 300ms ease-in-out !important;
+}
+
+.swiper-slide:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, .10);
+}
+
+.swiper__img img {
+    width: 100%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;  
+    /* height: 300px; */
+}
+
+.swiper-wrapper {
+    padding: 5% 0;
+    border-radius: 20px;
+}
+
+.swiper__text {
+    padding: 5%;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.swiper__price__text {
+    color: var(--theme-black);
+    margin: 3% 0;
+}
+
+.swiper__name__text {
+    color: var(--theme-grey);
+    margin: 3% 0;
+}
+
+.swiper__rate__text ion-icon {
+    color: var(--yellow-star);
+    margin: 2% 0;
+}
+
+.first-nav-btns {
+    /* width: 50%; */
+    margin: 2% 5%;
+    display: flex;
+    position: absolute;
+    right: 10%;
+}
+
+.first-nav-btns div ion-icon {
+    font-size: 1.75rem;
+    color: var(--theme-pink);
+}
+
 /* End of Explore Section CSS */
+
+/* Menu Section CSS */
+
+.menu-section {
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+hr.centred {
+    margin: auto;
+}
+
+.category-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    /* width: 90%; */
+}
+
+.category-btn {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    margin: 0 2%;
+    background: var(--theme-light-grey);
+    padding: 0.5% 1%;
+    cursor: pointer;
+}
+
+.category-btn.active {
+    background: var(--theme-very-ligh-pink);
+    color: var(--theme-pink);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 3% 0%;
+}
+.card-container div {
+    box-shadow: none;
+    transition: box-shadow 300ms ease-in-out;
+}
+.card-container div:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, .10);
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.pagination div ion-icon:first-child {
+    margin: 0 2% 0 0;
+    font-size: 1.75rem;
+    /* background-color: var(--theme-very-ligh-pink); */
+    color: var(--theme-pink);
+}
+
+.pagination div {
+    margin: 0 2%;
+    font-size: 1.15rem;
+    color: var(--theme-grey);
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+}
+
+.pagination div ion-icon:last-child {
+    margin: 0 0 0 5%;
+    font-size: 1.75rem;
+}
+
+.pagination .page_no.active {
+    color: var(--theme-black);
+    font-weight: 900;
+}
+
+/* End of Menu Section CSS */
+
+/* Review Section CSS */
+
+.review-section {
+    width: 90%;
+    margin: 0 5%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+
+.othswiper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.othswiper-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.othswiper-nav div ion-icon {
+    color: var(--theme-pink);
+    cursor: pointer;
+    font-size: 1.75rem;
+}
+
+.othswiper div .swiper-slide {
+    width: 50%;
+    margin: auto;
+}
+
+.othswiper-pag {
+    font-size: 1.75rem;
+    font-family: "Oswald", sans-serif;
+    margin: 2% auto;
+    font-weight: 700;
+}
+.customer {
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.customer p {
+    font-size: 1.75rem;
+    color: var(--theme-grey);
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    line-height: 3rem;
+}
+
+.about-customer {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.customer-img img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.customer-info {
+    margin: 0 0 0 5%;
+}
+
+.customer-info .customer-name {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--theme-pink);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.customer-info .customer-profession {
+    font-size: 0.9rem;
+    color: var(--theme-grey);
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    line-height: normal;
+}
+
+/* End of Review Section CSS */
+
+/* Footer Section CSS */
+
+.footer-section {
+    margin: 5% 5% 0 5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 5%;
+}
+
+.footer-section .logo-section img {
+    width: 80%;
+    
+}
+
+.footer-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-section div p.section-heading {
+    font-size: 2rem;
+    color: var(--theme-black);
+    /* margin: 7% 0; */
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+.footer-section div a {
+    display: block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    color: var(--theme-grey);
+    font-weight: 400;
+    transition: all 300ms ease-in-out;
+    /* margin: 5% 0; */
+    text-align:left;
+}
+
+.footer-section div a:hover, .footer-section div a:active {
+    color: var(--theme-black);
+}
+
+.final-section {
+    /* text-align: center; */
+    margin: 5% 0% 2% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.final-section div {
+    margin: 0 2%;
+}
+
+.final-section div a {
+    text-decoration: none;
+    color: var(--theme-grey);
+    font-weight: 500;
+    font-size: 1.10rem;
+    font-family: "Poppins", sans-serif;
+    transition: color 300ms ease-in-out;
+}
+
+.final-section div a:hover {
+    color: var(--theme-black);
+}
+
+/* End of Footer Section CSS */

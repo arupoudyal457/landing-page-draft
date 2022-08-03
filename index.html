@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <title>The Table Top</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
                     </a>
                 </div>
                 <div class="logo">
-                    <ion-icon name="storefront-outline"></ion-icon>
+                    <img src="./img/ttt logooooo-2.png" alt='The Table Top logo'/>
                 </div>
                 <div class="navbar_items">
                     <ul>
@@ -40,15 +42,20 @@
                 </div>
             </nav>
             <div class="jumbotron">
-                <h1 class="jumbotron-header">The perfect cake every time!</h1>
-                <h2 class="description">We are a company dedicated to the preparation of cookies, providing our customers with products that are always fresh from the oven.</h2>
-                <div class="button btn__padding">
-                    <div class="textpart">
-                        Discover Menu
+                <div>
+                    <h1 class="jumbotron-header">Unmatched<br><span style="font-weight: 600; text-transform: uppercase; color: var(--theme-black);">taste</span> with unmatched<br><span style="font-weight: 600; text-transform: uppercase; color: var(--theme-black);">design.</span></h1>
+                    <h2 class="description">We are a bakery dedicated to bringing you fresh homemade, eggless cakes from our home kitchen. Make every occasion memorable with us.</h2>
+                    <div class="button btn__padding">
+                        <div class="textpart">
+                            Discover Menu
+                        </div>
+                        <div class="iconpart">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
                     </div>
-                    <div class="iconpart">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </div>
+                </div>
+                <div>
+                    <img src="./img/bbb.jpg" alt="Cake Front Image" />
                 </div>
             </div>
         </div>
@@ -87,8 +94,8 @@
             </div>
         </div>
         <div class="about-section">
-            <div class="img-part">
-                <img src="https://images.unsplash.com/photo-1565467988204-44fc3fd3c726?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="pastry image"/>
+            <div class="img-part pattern-dots-md ">
+                <img src="./img/cake image -2.jpg" alt="pastry image"/>
             </div>
             <div class="txt-part">
                 <hr class="border-part"></hr>
@@ -106,35 +113,418 @@
             </div>
         </div>
         <div class="explore-section">
-            <hr class="border-part"></hr>
-            <p class="fancy-header">Explore</p>
-            <h3 class="section-header">Hot Selling Recipes</h3>
-            <p class="bulk-text-part">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Vitae atque, in ullam delectus odio sunt porro.</p>
-        </div>
-        <div class="item__slide">
-            <div class="item__card">
-                <div class="item__card__img">
-                    <img src="" alt="item"/>
+            <div>
+                <hr class="border-part"></hr>
+                <p class="fancy-header">Explore</p>
+                <h3 class="section-header">Hot Selling Recipes</h3>
+                <p class="bulk-text-part">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Vitae atque, in ullam delectus odio sunt porro.</p>
+            </div>
+            <div class="first-nav-btns">
+                <div class="nav-btn-prev">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
                 </div>
-                <div class="item__card__info">
-                    <p>Price</p>
-                    <p>Name</p>
-                    <p>Rating</p>
+                <div class="nav-btn-next">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
                 </div>
             </div>
-            <div class="item__card">
-                
-            </div>
-            <div class="item__card">
+            <div class="random-pattern">
                 
             </div>
         </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">&#20B9</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="menu-section">
+            <hr class="border-part centred"></hr>
+            <p class="fancy-header">See</p>
+            <h3 class="section-header">Our Menu</h3>
+            <div class="category-btns">
+                <div class="category-btn">
+                    Cakes
+                </div>
+                <div class="category-btn active">
+                    Cupcakes
+                </div>
+                <div class="category-btn">
+                    Brownies
+                </div>
+                <div class="category-btn">
+                    Cookies
+                </div>
+
+            </div>
+            <div class="card-container">
+                <div class="item_card">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="item_card">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="item_card">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="item_card">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="item_card">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="item_card">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="item_card">
+                    <div class="swiper__img">
+                        <img src="https://images.unsplash.com/photo-1609271873730-ed73bb15b9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="item img"/>
+                    </div>
+                    <div class="swiper__text">
+                        <p class="swiper__price__text">Price</p>
+                        <p class="swiper__name__text">Name</p>
+                        <p class="swiper__rate__text">
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star" size="small"></ion-icon>
+                            <ion-icon name="star-outline" size="small"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="pag-btn-prev">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </div>
+                <div class="page_no active">
+                    1
+                </div>
+                <div class="page_no">
+                    2
+                </div>
+                <div class="page_no">
+                    3
+                </div>
+                <div class="page_no">
+                    4
+                </div>
+                <div class="page_no">
+                    5
+                </div>
+                <div class="pag-btn-next">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="review-section">
+            <div>
+                <hr class="border-part"></hr>
+                <div>
+                    <p class="fancy-header">Testimonial</p>
+                </div>
+                <h3 class="section-header">Hear from<br> our Customers</h3>
+                <p class="bulk-text-part">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Vitae atque, in ullam delectus odio sunt porro.</p>
+                <div class="othswiper-nav">
+                    <div class="othswiper-nav-prev">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </div>
+                    <div class="othswiper-nav-next">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="othswiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide customer">
+                            <p class="slider-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi itaque perspiciatis facere est et enim provident alias? Esse illo est laboriosam pariatur inventore ut deserunt veniam similique, voluptas placeat."</p>
+                            <div class="about-customer">
+                                <div class="customer-img">
+                                    <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Customer Image"/>
+                                </div>
+                                <div class="customer-info">
+                                    <p class="customer-name">First Last Name</p>
+                                    <p class="customer-profession">Profession at Company Co.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customer">
+                            <p class="slider-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi itaque perspiciatis facere est et enim provident alias? Esse illo est laboriosam pariatur inventore ut deserunt veniam similique, voluptas placeat."</p>
+                            <div class="about-customer">
+                                <div class="customer-img">
+                                    <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Customer Image"/>
+                                </div>
+                                <div class="customer-info">
+                                    <p class="customer-name">First Last Name</p>
+                                    <p class="customer-profession">Profession at Company Co.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customer">
+                            <p class="slider-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi itaque perspiciatis facere est et enim provident alias? Esse illo est laboriosam pariatur inventore ut deserunt veniam similique, voluptas placeat."</p>
+                            <div class="about-customer">
+                                <div class="customer-img">
+                                    <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Customer Image"/>
+                                </div>
+                                <div class="customer-info">
+                                    <p class="customer-name">First Last Name</p>
+                                    <p class="customer-profession">Profession at Company Co.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customer">
+                            <p class="slider-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi itaque perspiciatis facere est et enim provident alias? Esse illo est laboriosam pariatur inventore ut deserunt veniam similique, voluptas placeat."</p>
+                            <div class="about-customer">
+                                <div class="customer-img">
+                                    <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Customer Image"/>
+                                </div>
+                                <div class="customer-info">
+                                    <p class="customer-name">First Last Name</p>
+                                    <p class="customer-profession">Profession at Company Co.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- <div class="othswiper-pag"></div> -->
+                    <!-- If we need navigation buttons -->
+                    
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </div>
+
+        
     </main>
     <footer>
+        <div class="footer-section">
+            <div class="logo-section">
+                <img src="./img/ttt logooooo.png" alt="The Table Top Logo" />
+            </div>
+            <div class="sitemap-section">
+                <p class="section-heading">Sitemap</p>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Desserts</a>
+                <a href="#">Order</a>
+                <a href="#">Contact</a>
 
+            </div>
+            <div class="footer-explore-section">
+                <p class="section-heading">Explore</p>
+                <a href="#">Cakes</a>
+                <a href="#">Cupcakes</a>
+                <a href="#">Brownies</a>
+                <a href="#">Cookies</a>
+            </div>
+            
+            <div class="blank">
+
+            </div>
+        </div>
+        <div class="final-section">
+            <div>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+            <div>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            <div>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
