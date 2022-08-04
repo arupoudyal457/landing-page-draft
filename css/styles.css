@@ -162,8 +162,25 @@ ion-icon {
     .navbar_items ul {
         width: 100%;
         flex-direction: column;
-        margin: 0.25em;
+        margin: 1rem 0 0 0;
         /* text-align: center; */
+    }
+
+    .navbar_items ul li {
+        margin: 2% 0 2% 0;
+    }
+    .active {
+        top: 5rem;
+        display: flex;
+    }
+}
+
+@media (max-width: 540px) {
+    .logo img {
+        width: 150px;
+    }
+    .logo {
+        margin: 0 2.5rem 0 0;
     }
 
     .active {
@@ -317,6 +334,24 @@ ion-icon {
         top: 70vh; */
     }
 }
+@media (max-width: 540px) {
+    .jumbotron-header {
+        font-size: 3.75rem;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .main-img {
+        display: none;
+    }
+
+    .jumbotron {
+        background-image: linear-gradient(rgba(256, 256, 256, 0.8), rgba(256, 256, 256, 0.8)), url("../img/bbb-2.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
 /* End of Jumbotron CSS */
 
 /* About section CSS */
@@ -327,6 +362,7 @@ ion-icon {
     grid-template-columns: repeat(2, 1fr);
     margin: 10% 5%;
 }
+
 .img-part {
     color: var(--theme-black);
 
@@ -375,13 +411,29 @@ hr.border-part {
     line-height: 2rem;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 940px) {
     .about-section {
         grid-template-columns: 1fr;
     }
     .txt-part {
         padding: 5% 0%;
     }
+}
+
+@media (max-width: 540px) {
+    .fancy-header {
+        font-size: 1rem;
+    }
+
+    .section-header {
+        font-size: 2.5rem;
+    }
+
+    .bulk-text-part {
+        font-size: 0.9rem;
+        line-height: 1.75rem;
+    }
+
 }
 /* End of About Section CSS */
 
@@ -496,6 +548,7 @@ hr.centred {
     background: var(--theme-light-grey);
     padding: 0.5% 1%;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .category-btn.active {
@@ -510,11 +563,11 @@ hr.centred {
     row-gap: 1.5rem;
     margin: 3% 0%;
 }
-.card-container div {
+.card-container .item_card {
     box-shadow: none;
     transition: box-shadow 300ms ease-in-out;
 }
-.card-container div:hover {
+.card-container .item_card:hover {
     box-shadow: 0 0 25px rgba(0, 0, 0, .10);
 }
 
@@ -550,6 +603,34 @@ hr.centred {
     font-weight: 900;
 }
 
+@media (max-width: 940px) {
+
+    .category-btn {
+        margin: 2%;
+    }
+
+    .category-btns {
+        justify-content: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .category-btns {
+        justify-content: center;
+    }
+
+    .category-btn {
+        font-size: 0.75rem;
+        margin: 2%;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 /* End of Menu Section CSS */
 
 /* Review Section CSS */
@@ -633,6 +714,21 @@ hr.centred {
     line-height: normal;
 }
 
+@media (max-width: 540px) {
+    .customer p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .customer-info .customer-name {
+        font-size: 0.75rem;
+    }
+
+    .customer-info .customer-profession {
+        font-size: 0.65rem;
+    }
+
+}
 /* End of Review Section CSS */
 
 /* Footer Section CSS */
@@ -640,7 +736,7 @@ hr.centred {
 .footer-section {
     margin: 5% 5% 0 5%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5%;
 }
 
@@ -653,6 +749,7 @@ hr.centred {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 80%;
 }
 
 .footer-section div p.section-heading {
@@ -687,7 +784,7 @@ hr.centred {
 }
 
 .final-section div {
-    margin: 0 2%;
+    margin: 2%;
 }
 
 .final-section div a {
@@ -703,4 +800,30 @@ hr.centred {
     color: var(--theme-black);
 }
 
+@media (max-width: 540px) {
+    
+    .footer-section {
+        grid-template-columns: 1fr;
+        margin: 0 5% 2% 5%;
+        width: 90%;
+    }
+
+    .footer-section div, .logo-section img, .footer-section div a {
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer-section div a {
+        margin: 2% auto;
+    }
+
+    .section-heading {
+        margin-bottom: 5%;
+    }
+
+    .final-section {
+        margin: 25% 0 5% 0;
+    }
+
+}
 /* End of Footer Section CSS */

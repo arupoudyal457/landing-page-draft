@@ -27,7 +27,18 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.nav-btn-next',
       prevEl: '.nav-btn-prev',
     },
-  
+    breakpoints: {
+      939: {
+        slidesPerView: 4.5,
+        spaceBetween: 25,
+      },
+      539: {
+        slidesPerView: 2.5,
+      },
+      0: {
+        slidesPerView: 1.5,
+      }
+    }
     // And if we need scrollbar
     // scrollbar: {
     //   el: '.swiper-scrollbar',
@@ -42,7 +53,6 @@ const othSwiper = new Swiper('.othswiper', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
-    spaceBetween: 40,
     slidesPerView: 3,
     // centeredSlides: true,
   
@@ -57,7 +67,20 @@ const othSwiper = new Swiper('.othswiper', {
       nextEl: '.othswiper-nav-next',
       prevEl: '.othswiper-nav-prev',
     },
-  
+    breakpoints: {
+      939: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      539: {
+        slidesPerView: 1.5,
+        spaceBetween: 20
+      },
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
     // And if we need scrollbar
     // scrollbar: {
     //   el: '.swiper-scrollbar',
