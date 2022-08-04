@@ -827,3 +827,9 @@ hr.centred {
 
 }
 /* End of Footer Section CSS */
+
+/* ***********Products Page *********** */
+.button-container {
+    display: flex;
+}
+
